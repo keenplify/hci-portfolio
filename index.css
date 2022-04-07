@@ -11,15 +11,28 @@ h3,
 h4,
 h5,
 h6,
-.rainbow {
+.rainbow,
+.clay span {
   font-family: "Fredoka One", cursive !important;
   line-height: 1.5em;
+}
+
+.home {
+  margin-top: calc(5vh + 52px);
 }
 
 .me {
   width: 312px;
   padding: 25px 0;
   animation: dribble 1.5s 0s infinite alternate ease-in-out forwards;
+}
+
+.poggers {
+  transition: 0.6s ease;
+}
+
+.poggers:hover {
+  transform: scale(1.1);
 }
 
 .name {
