@@ -1,0 +1,135 @@
+* {
+  --aboutmebg: #6accca;
+  --cirrus-fg: #dd4f4f;
+  --header-link-color: #7c70e7;
+  font-family: "Chewy", cursive !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.rainbow {
+  font-family: "Fredoka One", cursive !important;
+  line-height: 1.5em;
+}
+
+.me {
+  width: 312px;
+  padding: 25px 0;
+  animation: dribble 1.5s 0s infinite alternate ease-in-out forwards;
+}
+
+.name {
+  width: 312px;
+  animation: dribble2 2.5s 0s infinite alternate ease-in-out forwards;
+}
+
+@keyframes dribble {
+  0% {
+    transform: translateY(10px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(-10deg);
+  }
+}
+
+@keyframes dribble2 {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.parallax {
+  /* The image used */
+  background-image: url("res/index-bg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutme {
+  margin-top: 5em;
+}
+
+.aboutme .contents {
+  background: var(--aboutmebg);
+  padding: 0 5%;
+}
+
+.wave {
+  fill: var(--aboutmebg);
+}
+
+.rainbow-container {
+  background: var(--cirrus-fg);
+  padding: 0.1em 0.25em;
+  border-radius: 0.5em;
+}
+.rainbow {
+  font-family: "oswald", sans-serif;
+  background-size: 200%;
+  background-image: none;
+  background-image: linear-gradient(
+    45deg,
+    #fff070 0%,
+    #fff070 35%,
+    #00c9d3 66%,
+    #00c9d3 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: glow 9s linear infinite;
+  animation: glow 9s linear infinite;
+}
+
+.clay {
+  width: 256px;
+  height: 256px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0.5em auto !important;
+}
+
+.red {
+  background-image: url("./res/clay-red.png");
+}
+
+.green {
+  background-image: url("./res/clay-green.png");
+}
+
+.blue {
+  background-image: url("./res/clay-blue.png");
+}
+
+.clay .logo {
+  width: 60%;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  background: #e170e7;
+}
+
+.timeline {
+  background: #e170e7;
+  margin-top: -1em;
+  color: var(--cirrus-bg);
+  padding: 3em;
+}
+
+.timeline iframe {
+  height: 512px;
+  overflow: hidden;
+}
