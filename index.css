@@ -160,6 +160,7 @@ h6,
 
 .rotate {
   transform: rotate(180deg);
+  fill: var(--aboutmebgc);
   background: #38ff43;
 }
 
