@@ -1,8 +1,25 @@
 * {
-  --aboutmebg: #6accca;
-  --cirrus-fg: #dd4f4f;
-  --header-link-color: #7c70e7;
+  --aboutmebg: #3bd;
+  --aboutmebgc: #26a28f;
+  --cirrus-fg: #ffcc13;
+  --cirrus-bg: #e8e1ef;
+  --header-link-color: #540d6e;
+  --gray: #2e2e2e;
   font-family: "Chewy", cursive !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.clay span {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Fredoka One", cursive;
+  -webkit-text-stroke: 0.01em var(--gray);
+  text-shadow: 0.05rem 0.05rem 0 var(--cirrus-bg);
 }
 
 h1,
@@ -15,6 +32,7 @@ h6,
 .clay span {
   font-family: "Fredoka One", cursive !important;
   line-height: 1.5em;
+  color: var(--cirrus-fg);
 }
 
 .home {
@@ -76,7 +94,11 @@ h6,
 }
 
 .aboutme .contents {
-  background: var(--aboutmebg);
+  background: linear-gradient(
+    180deg,
+    var(--aboutmebg) 0%,
+    var(--aboutmebgc) 100%
+  );
   padding: 0 5%;
 }
 
@@ -84,26 +106,32 @@ h6,
   fill: var(--aboutmebg);
 }
 
+.wave-rotated {
+  fill: var(--aboutmebgc);
+}
+
 .rainbow-container {
-  background: var(--cirrus-fg);
+  background: linear-gradient(to right, #aa076b, #61045f);
   padding: 0.1em 0.25em;
   border-radius: 0.5em;
+  border: 0.05em solid white;
+  position: relative;
 }
 .rainbow {
-  font-family: "oswald", sans-serif;
-  background-size: 200%;
-  background-image: none;
+  background-size: 200% !important;
+  background-image: none !important;
   background-image: linear-gradient(
     45deg,
     #fff070 0%,
     #fff070 35%,
-    #00c9d3 66%,
-    #00c9d3 100%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-animation: glow 9s linear infinite;
-  animation: glow 9s linear infinite;
+    var(--cirrus-fg) 66%,
+    var(--cirrus-fg) 100%
+  ) !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  animation: glow 6s linear infinite !important;
+  text-shadow: none !important;
 }
 
 .clay {
@@ -132,11 +160,11 @@ h6,
 
 .rotate {
   transform: rotate(180deg);
-  background: #e170e7;
+  background: #38ff43;
 }
 
 .timeline {
-  background: #e170e7;
+  background: linear-gradient(180deg, #38ff43 0%, #85ff8b 100%);
   margin-top: -1em;
   color: var(--cirrus-bg);
   padding: 3em;
