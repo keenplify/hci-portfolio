@@ -35,6 +35,19 @@ h6,
   color: var(--cirrus-fg);
 }
 
+.clay {
+  padding: 1em;
+}
+
+.clay span {
+  margin-top: auto;
+}
+
+.clay img {
+  margin-top: auto;
+  height: auto;
+}
+
 .home {
   margin-top: calc(5vh + 52px);
 }
@@ -102,6 +115,12 @@ h6,
   padding: 0 5%;
 }
 
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 768px;
+}
+
 .wave {
   fill: var(--aboutmebg);
 }
@@ -152,6 +171,18 @@ h6,
 
 .blue {
   background-image: url("./res/clay-blue.png");
+}
+
+.pupol {
+  background-image: url("./res/clay-pupol.png");
+}
+
+.yellow {
+  background-image: url("./res/clay-yellow.png");
+}
+
+.black {
+  background-image: url("./res/clay-black.png");
 }
 
 .clay .logo {
